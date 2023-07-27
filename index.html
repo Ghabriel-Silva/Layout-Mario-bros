@@ -26,6 +26,39 @@
         <img class="bloco-flutuante-sozinho-baixo" src="image-portifolio/Slice 8 1.png" alt="bloco flutuante">
         <img class ="bloco-futuante-grupo" src="image-portifolio/Slice 1 1.png" alt="bloco futuante grupo">
         <img class="gif-gomba-block" src="image-portifolio/com-gif-maker-unscreen.gif" alt="gif gomba block">
+        <audio id="sound1">
+            <source src="audio/ytmp3-convert.com_64kbps-super-mario-som-classico-da-moeda.mp3" type="audio/mpeg">
+            <!-- Fallback para navegadores que não suportam a tag de áudio -->
+            Seu navegador não suporta a reprodução de áudio.
+          </audio>
+        
+          <audio id="sound2">
+            <source src="audio/ytmp3-convert.com_64kbps-super-mario-som-classico-da-moeda.mp3" type="audio/mpeg">
+            <!-- Fallback para navegadores que não suportam a tag de áudio -->
+            Seu navegador não suporta a reprodução de áudio.
+          </audio>
+        
+          <audio id="sound3">
+            <source src="audio/ytmp3-convert.com_64kbps-super-mario-som-classico-da-moeda.mp3" type="audio/mpeg">
+            <!-- Fallback para navegadores que não suportam a tag de áudio -->
+            Seu navegador não suporta a reprodução de áudio.
+          </audio>
     </Section>
+    <script>
+        function addClickEvents() {
+            const images = document.querySelectorAll(".bloco-flutuante-sozinho-cima, .bloco-flutuante-sozinho-baixo, .bloco-flutuante-grupo");
+            const sounds = document.querySelectorAll("#sound1, #sound2, #sound3");
+
+            images.forEach((image, index) => {
+                image.addEventListener("click", function () {
+                    sounds[index].currentTime = 0; // Isso reinicia o som, caso ele já esteja sendo reproduzido
+                    sounds[index].play();
+                });
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", addClickEvents);
+    </script>
 </body>
+
 </html>
