@@ -158,16 +158,16 @@
     flex-direction: column;
 
 }
-h1{
+.child-title{
     font-family: 'Press Start 2P', cursive;
    font-weight: 800;
     color: white;
     font-size: 20px;
 }
-p{
+.child-text{
     padding-top: 20px;
     font-family: 'Press Start 2P', cursive;
     font-weight: 600;
      color: white;
      font-size: 20px;
-    }
+}
