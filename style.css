@@ -171,3 +171,40 @@
      color: white;
      font-size: 20px;
 }
+.container-subterraneo{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    position: relative;
+}
+.Chão-subterraneo{
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+}
+.bloco-cima{
+    position: absolute;
+    top: 5vw;
+   width: 100vw;
+}
+.cano-meio{
+    position: absolute;
+    height: 5vw;
+    width: 5vw;
+    bottom: 7vw;
+    left: 35vw;
+}
+.cano-menor{
+    position: absolute;
+    height: 5vw;
+    bottom: 7vw;
+    left:45vw;
+
+}
+.cano-meio-2{
+    position: absolute;
+    height: 5vw;
+    bottom: 7vw;  
+    width: 5vw;
+    left: 55vw;
+}
