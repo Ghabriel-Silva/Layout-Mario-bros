@@ -181,6 +181,7 @@
     position: absolute;
     bottom:0;
     width: 100vw;
+    z-index: 1;
 }
 .bloco-cima{
     position: absolute;
@@ -192,13 +193,14 @@
     height: 5vw;
     width: 5vw;
     bottom: 7vw;
-    left: 35vw;
+    left: 90vw;
 }
 .cano-menor{
     position: absolute;
-    height: 5vw;
+    height: 5.5vw;
     bottom: 7vw;
-    left:45vw;
+    left:48.8vw;
+    z-index: 1;
 
 }
 .cano-meio-2{
@@ -206,5 +208,87 @@
     height: 5vw;
     bottom: 7vw;  
     width: 5vw;
-    left: 55vw;
+    left: 5vw;
 }
+.cocumelo{
+    height:4vw;
+    position:absolute;
+    top:1.4vw;
+    right:0;
+    animation: cocumelo 25s  linear  infinite  alternate;
+    z-index:3;
+}
+@keyframes cocumelo{
+    from {
+        right: 98%;
+    }
+    to {
+        right: -20px;
+    }
+}
+.flower{
+    width:3.7vw;
+    height: 4.7vw;
+    background-size: cover;
+    animation: flor 6s infinite alternate;
+    overflow: hidden;
+    position: absolute;
+    left:49.9vw;
+}
+@keyframes flor {
+    0% {
+      top:62vw;
+    }
+    15% {
+        top:62vw;
+      }
+    20% {
+        top:62vw;
+    }
+    45% {
+        top:62vw;
+    }
+    55% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    60% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    63%{
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    65% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    70% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    75% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    77% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    80% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    85%{
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    90%{
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    93% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    95%{
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    100% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+      top:56.4vw;
+    }
+  }
+ 
+  
+  
