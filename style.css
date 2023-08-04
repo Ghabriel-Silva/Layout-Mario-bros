@@ -293,5 +293,11 @@
       Bottom:12vw; 
     }
 }
-  
-  
+@media (max-width:500px){
+    .scren-inicial{
+        height: 90vh; 
+    }
+    .container-subterraneo{
+        height: 90vh;
+}
+}
