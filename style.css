@@ -194,6 +194,7 @@
     width: 5vw;
     bottom: 7vw;
     left: 90vw;
+    z-index: 1;
 }
 .cano-menor{
     position: absolute;
@@ -209,6 +210,7 @@
     bottom: 7vw;  
     width: 5vw;
     left: 5vw;
+    z-index: 1;
 }
 .cocumelo{
     height:4vw;
@@ -226,7 +228,7 @@
         right: -20px;
     }
 }
-.flower{
+.flower-1{
     width:3.7vw;
     height: 4.7vw;
     background-size: cover;
@@ -236,59 +238,69 @@
     left:49.9vw;
 }
 @keyframes flor {
-    0% {
-      top:62vw;
+    0%, 15%, 20%, 45% {
+      bottom:6vw;
     }
-    15% {
-        top:62vw;
-      }
-    20% {
-        top:62vw;
-    }
-    45% {
-        top:62vw;
-    }
-    55% {
+    55%, 63%, 70%, 77%, 85%, 93%{
       background-image: url('image-portifolio/flor-mv-3\ 1.png');
     }
-    60% {
-      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
-    }
-    63%{
-      background-image: url('image-portifolio/flor-mv-3\ 1.png');
-    }
-    65% {
-      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
-    }
-    70% {
-      background-image: url('image-portifolio/flor-mv-3\ 1.png');
-    }
-    75% {
-      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
-    }
-    77% {
-      background-image: url('image-portifolio/flor-mv-3\ 1.png');
-    }
-    80% {
-      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
-    }
-    85%{
-      background-image: url('image-portifolio/flor-mv-3\ 1.png');
-    }
-    90%{
-      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
-    }
-    93% {
-      background-image: url('image-portifolio/flor-mv-3\ 1.png');
-    }
-    95%{
+    60%, 65%, 75%, 80%, 90%, 95% {
       background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
     }
     100% {
       background-image: url('image-portifolio/flor-mv-3\ 1.png');
-      top:56.4vw;
+      Bottom:11.2vw;
     }
   }
- 
-  
+  .flower-2{
+    width:3.7vw;
+    height: 4.7vw;
+    background-size: cover;
+    animation: flor-2 6s infinite alternate;
+    overflow: hidden;
+    position: absolute;
+    left:5.5vw;
+    
+}
+@keyframes flor-2 {
+    0%, 15%, 20%, 45% {
+      bottom:6vw;
+    }
+    55%, 63%, 70%, 77%, 85%, 93%{
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    60%, 65%, 75%, 80%, 90%, 95% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    100% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+      Bottom:11.6vw;
+    }
+  }
+
+.flower-3{
+    width:3.7vw;
+    height: 4.7vw;
+    background-size: cover;
+    animation: flor-3 7s infinite alternate;
+    overflow: hidden;
+    position: absolute;
+    left:90.7vw;
+    
+}
+@keyframes flor-3 {
+    0%, 15%, 20%, 45% {
+      bottom:6vw;
+    }
+    55%, 63%, 70%, 77%, 85%, 93%{
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+    }
+    60%, 65%, 75%, 80%, 90%, 95% {
+      background-image: url('image-portifolio/flor\ mv\ 2\ 1.png');
+    }
+    100% {
+      background-image: url('image-portifolio/flor-mv-3\ 1.png');
+      Bottom:11.6vw;
+    }
+  }
   
